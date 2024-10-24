@@ -9,7 +9,7 @@ describe('<Main />', () => {
     expect(
       screen.getByRole('heading', { name: /react avançado/i })
     ).toBeInTheDocument()
-    //gerar snapshot - não é tão utilizado, só quando precisa garantir estilos e hirequarquia do componente
+    //gerar snapshot - não é tão utilizado, só quando precisa garantir estruturas hierarquicas e estilos do componente
 
     expect(container.firstChild).toMatchSnapshot()
   })
